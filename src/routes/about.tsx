@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { PageHero } from "@/components/site/PageHero";
 import { AboutSection, FinalCta, TestimonialsSection, WhySection } from "@/components/site/sections";
-import djSire from "@/assets/dj-sire.jpg";
+import djSire from "@/assets/dj sire young.jpeg";
 
 const title = "About DJ Sire — 30+ Years Behind the Decks | SireSounds";
 const description =
