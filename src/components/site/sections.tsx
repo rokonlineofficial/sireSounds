@@ -14,9 +14,9 @@ import {
 
 import { Reveal } from "./Reveal";
 import { Chip, CtaAnchor, CtaLink, Equalizer, SectionHeading, StatBlock } from "./ui";
-import ctaBg from "@/assets/cta-bg.jpg";
+import ctaBg from "@/assets/imageye___-_imgi_23_footer_bg.jpeg";
 import djSire from "@/assets/dj-sire.jpg";
-import eventWedding from "@/assets/event-wedding.jpg";
+import eventWedding from "@/assets/dj events.png";
 import galleryCorporate from "@/assets/gallery-corporate.jpg";
 import galleryFamily from "@/assets/gallery-family.jpg";
 import galleryQuince from "@/assets/gallery-quince.jpg";
@@ -48,7 +48,8 @@ export function Hero() {
         height={1280}
         className="absolute inset-0 -z-20 h-full w-full object-cover"
       />
-      <div className="veil absolute inset-0 -z-10" aria-hidden="true" />
+      <div className="absolute     inset-0 -z-10 bg-black/75"
+      aria-hidden="true" />
       <div className="grid-texture absolute inset-0 -z-10 opacity-40" aria-hidden="true" />
 
       <div className="shell">
@@ -140,14 +141,14 @@ export function RigSection() {
           {GEAR.map((item, i) => (
             <Reveal as="li" key={item.name} delay={i * 90}>
               <article className="card-surface zoom-media group h-full overflow-hidden">
-                <div className="aspect-[3/4] overflow-hidden">
+                <div className="aspect-[5/6] overflow-hidden">
                   <img
                     src={item.img}
                     alt={item.alt}
                     loading="lazy"
                     width={1024}
                     height={768}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-certain"
                   />
                 </div>
                 <div className="p-6">
