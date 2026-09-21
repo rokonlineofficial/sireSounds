@@ -47,7 +47,7 @@ function ContactPage() {
         imageAlt="Corporate event lit for a SireSounds Mobile DJ set in Charlotte"
       />
 
-      <section className="section-y mt-16 sm:mt-20 lg:mt-24">
+      <section className="section-y mt-10">
         <div className="shell grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal>
             <SectionHeading
