@@ -9,7 +9,7 @@ import type { ReactNode } from "react";
  * তাই ছবি ছাড়াও পেজে কোনো এরর আসবে না।
  * ===================================================================== */
 const IMAGES = {
-  hero: "/src/assets/wedding hero.webp",
+  hero: "/src/assets/wedding-hero.webp",
   intro: "/src/assets/sireDJ.png",
   ceremony: "/src/assets/gallery-family.jpg",
   reception: "/src/assets/recievetion.webp",
