@@ -16,7 +16,7 @@ import { Reveal } from "./Reveal";
 import { Chip, CtaAnchor, CtaLink, Equalizer, SectionHeading, StatBlock } from "./ui";
 import ctaBg from "@/assets/imageye___-_imgi_23_footer_bg.jpeg";
 import djSire from "@/assets/djsire 2006.png";
-import eventWedding from "@/assets/dj events.png";
+import eventWedding from "@/assets/dj-events.png";
 import galleryCorporate from "@/assets/gallery-corporate.jpg";
 import galleryFamily from "@/assets/gallery-family.jpg";
 import galleryQuince from "@/assets/gallery-quince.jpg";
