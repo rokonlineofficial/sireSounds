@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
-<<<<<<< HEAD
 import { Route as CorporateEventsRouteImport } from './routes/corporate-events'
 import { Route as EquipmentRouteImport } from './routes/equipment'
 import { Route as EventsRouteImport } from './routes/events'
@@ -21,11 +20,6 @@ import { Route as RatesRouteImport } from './routes/rates'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as WeddingDjRouteImport } from './routes/wedding-dj'
-=======
-import { Route as EventsRouteImport } from './routes/events'
-import { Route as RatesRouteImport } from './routes/rates'
-import { Route as ServicesRouteImport } from './routes/services'
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -42,7 +36,6 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-<<<<<<< HEAD
 const CorporateEventsRoute = CorporateEventsRouteImport.update({
   id: '/corporate-events',
   path: '/corporate-events',
@@ -53,21 +46,16 @@ const EquipmentRoute = EquipmentRouteImport.update({
   path: '/equipment',
   getParentRoute: () => rootRouteImport,
 } as any)
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 const EventsRoute = EventsRouteImport.update({
   id: '/events',
   path: '/events',
   getParentRoute: () => rootRouteImport,
 } as any)
-<<<<<<< HEAD
 const PrivatePartiesRoute = PrivatePartiesRouteImport.update({
   id: '/private-parties',
   path: '/private-parties',
   getParentRoute: () => rootRouteImport,
 } as any)
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 const RatesRoute = RatesRouteImport.update({
   id: '/rates',
   path: '/rates',
@@ -78,7 +66,6 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-<<<<<<< HEAD
 const TestimonialsRoute = TestimonialsRouteImport.update({
   id: '/testimonials',
   path: '/testimonials',
@@ -89,14 +76,11 @@ const WeddingDjRoute = WeddingDjRouteImport.update({
   path: '/wedding-dj',
   getParentRoute: () => rootRouteImport,
 } as any)
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-<<<<<<< HEAD
   '/corporate-events': typeof CorporateEventsRoute
   '/equipment': typeof EquipmentRoute
   '/events': typeof EventsRoute
@@ -105,17 +89,11 @@ export interface FileRoutesByFullPath {
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
   '/wedding-dj': typeof WeddingDjRoute
-=======
-  '/events': typeof EventsRoute
-  '/rates': typeof RatesRoute
-  '/services': typeof ServicesRoute
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-<<<<<<< HEAD
   '/corporate-events': typeof CorporateEventsRoute
   '/equipment': typeof EquipmentRoute
   '/events': typeof EventsRoute
@@ -124,18 +102,12 @@ export interface FileRoutesByTo {
   '/services': typeof ServicesRoute
   '/testimonials': typeof TestimonialsRoute
   '/wedding-dj': typeof WeddingDjRoute
-=======
-  '/events': typeof EventsRoute
-  '/rates': typeof RatesRoute
-  '/services': typeof ServicesRoute
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-<<<<<<< HEAD
   '/corporate-events': typeof CorporateEventsRoute
   '/equipment': typeof EquipmentRoute
   '/events': typeof EventsRoute
@@ -172,23 +144,11 @@ export interface FileRouteTypes {
     | '/services'
     | '/testimonials'
     | '/wedding-dj'
-=======
-  '/events': typeof EventsRoute
-  '/rates': typeof RatesRoute
-  '/services': typeof ServicesRoute
-}
-export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/events' | '/rates' | '/services'
-  fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/events' | '/rates' | '/services'
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/contact'
-<<<<<<< HEAD
     | '/corporate-events'
     | '/equipment'
     | '/events'
@@ -197,18 +157,12 @@ export interface FileRouteTypes {
     | '/services'
     | '/testimonials'
     | '/wedding-dj'
-=======
-    | '/events'
-    | '/rates'
-    | '/services'
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-<<<<<<< HEAD
   CorporateEventsRoute: typeof CorporateEventsRoute
   EquipmentRoute: typeof EquipmentRoute
   EventsRoute: typeof EventsRoute
@@ -217,11 +171,6 @@ export interface RootRouteChildren {
   ServicesRoute: typeof ServicesRoute
   TestimonialsRoute: typeof TestimonialsRoute
   WeddingDjRoute: typeof WeddingDjRoute
-=======
-  EventsRoute: typeof EventsRoute
-  RatesRoute: typeof RatesRoute
-  ServicesRoute: typeof ServicesRoute
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 }
 
 declare module '@tanstack/react-router' {
@@ -247,7 +196,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-<<<<<<< HEAD
     '/corporate-events': {
       id: '/corporate-events'
       path: '/corporate-events'
@@ -262,8 +210,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EquipmentRouteImport
       parentRoute: typeof rootRouteImport
     }
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
     '/events': {
       id: '/events'
       path: '/events'
@@ -271,7 +217,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EventsRouteImport
       parentRoute: typeof rootRouteImport
     }
-<<<<<<< HEAD
     '/private-parties': {
       id: '/private-parties'
       path: '/private-parties'
@@ -279,8 +224,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrivatePartiesRouteImport
       parentRoute: typeof rootRouteImport
     }
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
     '/rates': {
       id: '/rates'
       path: '/rates'
@@ -295,7 +238,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-<<<<<<< HEAD
     '/testimonials': {
       id: '/testimonials'
       path: '/testimonials'
@@ -310,8 +252,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WeddingDjRouteImport
       parentRoute: typeof rootRouteImport
     }
-=======
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
   }
 }
 
@@ -319,7 +259,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-<<<<<<< HEAD
   CorporateEventsRoute: CorporateEventsRoute,
   EquipmentRoute: EquipmentRoute,
   EventsRoute: EventsRoute,
@@ -328,11 +267,6 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesRoute: ServicesRoute,
   TestimonialsRoute: TestimonialsRoute,
   WeddingDjRoute: WeddingDjRoute,
-=======
-  EventsRoute: EventsRoute,
-  RatesRoute: RatesRoute,
-  ServicesRoute: ServicesRoute,
->>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
