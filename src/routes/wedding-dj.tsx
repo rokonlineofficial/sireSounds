@@ -9,10 +9,10 @@ import type { ReactNode } from "react";
  * তাই ছবি ছাড়াও পেজে কোনো এরর আসবে না।
  * ===================================================================== */
 const IMAGES = {
-  hero: "/src/assets/wedding-hero.webp",
-  intro: "/src/assets/sireDJ.png",
-  ceremony: "/src/assets/gallery-quince.jpg",
-  reception: "/src/assets/reciption.webp",
+  hero: "@assets/wedding-hero.webp",
+  intro: "@assets/sireDJ.png",
+  ceremony: "@assets/gallery-quince.jpg",
+  reception: "@assets/reciption.webp",
 };
 
 const PHONE = "(704) 441-2561";

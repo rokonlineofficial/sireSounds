@@ -5,10 +5,10 @@ import type { ReactNode } from "react";
 /* ================================================================================================================ */
 
 const IMAGES = {
-  hero: "/src/assets/corporate-dj-event.jpg",
-  intro: "/src/assets/corporate-dj-events.png",
-  program: "/src/assets/corporate-dj.jpg",
-  party: "/src/assets/dj-event.jpg",
+  hero: "@/assets/corporate-dj-event.jpg",
+  intro: "@/assets/corporate-dj-events.png",
+  program: "@/assets/corporate-dj.jpg",
+  party: "@/assets/dj-event.jpg",
 };
 
 const PHONE = "(704) 441-2561";
