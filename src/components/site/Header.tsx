@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 import { Link, useRouterState } from "@tanstack/react-router";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
+=======
+import { Link } from "@tanstack/react-router";
+import { Menu, Phone, X } from "lucide-react";
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 import { useEffect, useState } from "react";
 
 import { CtaLink } from "./ui";
 import { cn } from "@/lib/utils";
 import logoMark from "@/assets/sire-logo.png";
 
+<<<<<<< HEAD
 type NavItem = {
   label: string;
   to: string;
@@ -31,6 +37,12 @@ export const NAV: NavItem[] = [
       { label: "Private Parties", to: "/private-parties" },
     ],
   },
+=======
+export const NAV = [
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
   { label: "Events", to: "/events" },
   { label: "Rates", to: "/rates" },
   { label: "Contact", to: "/contact" },
@@ -39,6 +51,7 @@ export const NAV: NavItem[] = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+<<<<<<< HEAD
   const [subOpen, setSubOpen] = useState<string | null>(null);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
@@ -50,6 +63,8 @@ export function Header() {
     setOpen(false);
     setSubOpen(null);
   };
+=======
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -75,7 +90,11 @@ export function Header() {
       )}
     >
       <div className="shell grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-4">
+<<<<<<< HEAD
         <Link to="/" className="flex min-w-0 items-center gap-2.5" onClick={closeMenu}>
+=======
+        <Link to="/" className="flex min-w-0 items-center gap-2.5" onClick={() => setOpen(false)}>
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
           <img
             src={logoMark}
             alt="SireSounds Mobile DJ"
@@ -87,6 +106,7 @@ export function Header() {
         </Link>
 
         <div className="flex items-center gap-6">
+<<<<<<< HEAD
           {/* ============ DESKTOP MENU ============ */}
           <nav aria-label="Main" className="hidden lg:block">
             <ul className="flex items-center gap-7">
@@ -135,6 +155,22 @@ export function Header() {
                   </li>
                 ),
               )}
+=======
+          <nav aria-label="Main" className="hidden lg:block">
+            <ul className="flex items-center gap-7">
+              {NAV.map((item) => (
+                <li key={item.to}>
+                  <Link
+                    to={item.to}
+                    activeOptions={{ exact: item.to === "/" }}
+                    activeProps={{ className: "text-primary" }}
+                    className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
             </ul>
           </nav>
           <CtaLink to="/contact" className="hidden sm:inline-flex px-5 py-3">
@@ -142,7 +178,11 @@ export function Header() {
           </CtaLink>
           <button
             type="button"
+<<<<<<< HEAD
             onClick={() => (open ? closeMenu() : setOpen(true))}
+=======
+            onClick={() => setOpen((v) => !v)}
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
             className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-border-strong text-card-foreground transition-colors hover:border-primary hover:text-primary lg:hidden"
@@ -152,6 +192,7 @@ export function Header() {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* ============ MOBILE MENU ============ */}
       {open ? (
         <div className="animate-fade-up max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-border bg-background lg:hidden">
@@ -222,6 +263,28 @@ export function Header() {
             </ul>
             <div className="mt-6 grid gap-3">
               <CtaLink to="/contact" className="w-full" onClick={closeMenu}>
+=======
+      {open ? (
+        <div className="animate-fade-up border-t border-border bg-background lg:hidden">
+          <nav aria-label="Mobile" className="shell py-6">
+            <ul className="space-y-1">
+              {NAV.map((item) => (
+                <li key={item.to}>
+                  <Link
+                    to={item.to}
+                    onClick={() => setOpen(false)}
+                    activeOptions={{ exact: item.to === "/" }}
+                    activeProps={{ className: "text-primary" }}
+                    className="block border-b border-border py-4 font-display text-2xl font-semibold uppercase text-card-foreground"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-6 grid gap-3">
+              <CtaLink to="/contact" className="w-full" onClick={() => setOpen(false)}>
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
                 Check a Date
               </CtaLink>
               <a
@@ -236,4 +299,8 @@ export function Header() {
       ) : null}
     </header>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8ebfb26db11026ca86d131d4936007fb0f391029
