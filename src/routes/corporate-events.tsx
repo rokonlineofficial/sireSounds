@@ -4,11 +4,16 @@ import type { ReactNode } from "react";
 
 /* ================================================================================================================ */
 
+import heroImg from "@/assets/corporate-dj-event.jpg";
+import introImg from "@/assets/corporate-dj-events.png";
+import programImg from "@/assets/corporate-dj.jpg";
+import partyImg from "@/assets/dj-event.jpg";
+
 const IMAGES = {
-  hero: "@/assets/corporate-dj-event.jpg",
-  intro: "@/assets/corporate-dj-events.png",
-  program: "@/assets/corporate-dj.jpg",
-  party: "@/assets/dj-event.jpg",
+  hero: heroImg,
+  intro: introImg,
+  program: programImg,
+  party: partyImg,
 };
 
 const PHONE = "(704) 441-2561";

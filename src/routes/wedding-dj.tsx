@@ -2,17 +2,18 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Check, Quote } from "lucide-react";
 import type { ReactNode } from "react";
 
-/* =====================================================================
- * ছবি: পরে ছবি যোগ করতে, ছবিগুলো public/images/ ফোল্ডারে রাখুন
- * আর নিচে পাথ লিখে দিন। যেমন: hero: "/images/wedding-hero.jpg"
- * ফাঁকা ("") থাকলে ছবির জায়গায় একটা সুন্দর placeholder দেখাবে,
- * তাই ছবি ছাড়াও পেজে কোনো এরর আসবে না।
- * ===================================================================== */
+// ছবিগুলো src/assets এ আছে, তাই import করে ব্যবহার করা হয়েছে
+// ⚠️ ফাইলের নাম assets ফোল্ডারের নামের সাথে হুবহু মিলতে হবে
+import heroImg from "@/assets/wedding-hero.webp";
+import introImg from "@/assets/sireDJ.png";
+import ceremonyImg from "@/assets/gallery-quince.jpg";
+import receptionImg from "@/assets/reciption.webp";
+
 const IMAGES = {
-  hero: "@assets/wedding-hero.webp",
-  intro: "@assets/sireDJ.png",
-  ceremony: "@assets/gallery-quince.jpg",
-  reception: "@assets/reciption.webp",
+  hero: heroImg,
+  intro: introImg,
+  ceremony: ceremonyImg,
+  reception: receptionImg,
 };
 
 const PHONE = "(704) 441-2561";
