@@ -11,8 +11,8 @@ import type { ReactNode } from "react";
 const IMAGES = {
   hero: "/src/assets/wedding-hero.webp",
   intro: "/src/assets/sireDJ.png",
-  ceremony: "/src/assets/gallery-family.jpg",
-  reception: "/src/assets/recievetion.webp",
+  ceremony: "/src/assets/gallery-quince.jpg",
+  reception: "/src/assets/reciption.webp",
 };
 
 const PHONE = "(704) 441-2561";
