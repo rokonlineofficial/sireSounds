@@ -6,7 +6,7 @@ import ctaBg from "@/assets/cta-bg.jpg";
 
 const title = "DJ Rates in Charlotte NC — Transparent Pricing | SireSounds";
 const description =
-  "Wedding DJ from $600 per 4 hours, daytime event DJ from $400 per hour (3 hr minimum), and full equipment rental at $350 per day in Charlotte, NC.";
+  "Wedding DJ from $600 per 4 hours, daytime event DJ from $400 per hour (3 hr minimum), and full equipment Rentals at $350 per day in Charlotte, NC.";
 
 export const Route = createFileRoute("/rates")({
   head: () => ({

@@ -11,7 +11,7 @@ import gearMixer from "@/assets/gear-mixer.jpg";
 
 const title = "DJ Services in Charlotte — Sound, Lighting & Mics | SireSounds";
 const description =
-  "Wedding DJ, event DJ, equipment rental, dance-floor lighting, wireless microphones and powered sound systems for Charlotte, NC events.";
+  "Wedding DJ, event DJ, equipment Rentals, dance-floor lighting, wireless microphones and powered sound systems for Charlotte, NC events.";
 
 export const Route = createFileRoute("/services")({
   head: () => ({

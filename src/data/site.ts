@@ -15,7 +15,7 @@ export const SERVICES = [
       "Reunions, corporate nights, quinceañeras, Sweet 16s, school events, and block parties.",
   },
   {
-    name: "DJ Equipment Rental",
+    name: "DJ Equipment Rentals",
     icon: "sliders",
     description: "Rent the rig for your own event — speakers, stands, mixer, and mics.",
   },
@@ -53,7 +53,7 @@ export const RATES = [
     includes: ["Parties & HOA events", "Outdoor-ready setup", "Clean-edit music"],
   },
   {
-    name: "Equipment Rental",
+    name: "Equipment Rentals",
     price: "BASED ON YOUR NEEDS",
     unit: "Per Day",
     featured: false,

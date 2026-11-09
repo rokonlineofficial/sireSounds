@@ -60,7 +60,7 @@ export function Hero() {
         >
           SIRESOUNDS
           <br /> 
-          AUDIO EQUIPMENT RENTAL <span className="text-gradient-accent">AND DJ</span>
+          AUDIO EQUIPMENT Rentals <span className="text-gradient-accent">AND DJ</span>
         </h1>
         <p
           className="animate-fade-up mt-6 max-w-xl text-base leading-relaxed text-foreground/85 sm:text-lg"
@@ -268,7 +268,7 @@ export function ServicesSection() {
                 Built for <span className="text-gradient-accent">your event</span>
               </>
             }
-            lead="Full-service DJ, sound, lighting, and rental options for weddings and events across Charlotte, NC."
+            lead="Full-service DJ, sound, lighting, and Rentals options for weddings and events across Charlotte, NC."
             align="center"
           />
         </Reveal>
