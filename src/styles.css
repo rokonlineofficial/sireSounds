@@ -249,8 +249,8 @@
   opacity: 0;
   transform: translateY(24px);
   transition:
-    opacity 0.8s ease,
-    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity 0.8s ease,
+  transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @utility reveal-in {
@@ -270,6 +270,7 @@
 @utility animate-marquee {
   animation: marquee-x 28s linear infinite;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   *,
