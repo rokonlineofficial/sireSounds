@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import { CtaLink } from "./ui";
 import { cn } from "@/lib/utils";
-import logoMark from "@/assets/sire-logo.png";
+import logoMark from "@/assets/logo-siresounds-header.png";
 
 type NavItem = {
   label: string;
@@ -82,11 +82,8 @@ export function Header() {
           <img
             src={logoMark}
             alt="SireSounds Mobile DJ"
-            className="h-10 w-10 shrink-0 object-contain"
+            className="h-14 w-14 shrink-0 object-contain"
           />
-          <span className="truncate font-display text-xl font-semibold uppercase tracking-wide text-card-foreground">
-            Sire<span className="text-primary">Sounds</span>
-          </span>
         </Link>
 
         <div className="flex items-center gap-6">

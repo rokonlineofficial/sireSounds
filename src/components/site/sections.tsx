@@ -23,7 +23,7 @@ import galleryQuince from "@/assets/gallery-quince.jpg";
 import gearMixer from "@/assets/gearmix.jpeg";
 import paSystem from "@/assets/dj Set.jpeg";
 import evSpeakers from "@/assets/sound box.jpeg";
-import heroDj from "@/assets/sireDJ.png";
+import homeHero from "@/assets/home-hero-equipment.jpeg";
 import { EVENT_TYPES, GENRES, PHONE_DISPLAY, PHONE_HREF, RATES, SERVICES, TESTIMONIALS } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -40,60 +40,14 @@ const SERVICE_ICONS = {
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden pb-16 pt-32 sm:pb-20">
+    <section className="relative isolate pt-20 sm:pt-22 lg:pt-24">
       <img
-        src={heroDj}
-        alt="DJ mixer and turntables at a Charlotte, NC event with blue stage lighting"
+        src={homeHero}
+        alt="SireSounds audio equipment rentals and event setup"
         width={1920}
-        height={1280}
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        height={1080}
+        className="block h-auto w-full object-cover"
       />
-      <div className="absolute     inset-0 -z-10 bg-black/75"
-      aria-hidden="true" />
-      <div className="grid-texture absolute inset-0 -z-10 opacity-40" aria-hidden="true" />
-
-      <div className="shell">
-        <p className="eyebrow animate-fade-up">Charlotte, NC • Since 1994</p>
-        <h1
-          className="animate-fade-up mt-5 max-w-4xl text-[3rem] font-semibold leading-[0.92] sm:text-[4.5rem] lg:text-[6rem]"
-          style={{ animationDelay: "80ms" }}
-        >
-          SIRESOUNDS
-          <br /> 
-          AUDIO EQUIPMENT Rentals <span className="text-gradient-accent">AND DJ</span>
-        </h1>
-        <p
-          className="animate-fade-up mt-6 max-w-xl text-base leading-relaxed text-foreground/85 sm:text-lg"
-          style={{ animationDelay: "160ms" }}
-        >
-          30+ years of weddings, reunions, and packed rooms — run on professional-grade gear and a
-          crate that spans every era.
-        </p>
-        <div
-          className="animate-fade-up mt-8 flex flex-col gap-3 sm:flex-row"
-          style={{ animationDelay: "240ms" }}
-        >
-          <CtaLink to="/contact" className="w-full sm:w-auto">
-            Book Your Date
-          </CtaLink>
-          <CtaLink to="/services" variant="outline" className="w-full sm:w-auto">
-            See the Rig
-          </CtaLink>
-        </div>
-
-        <dl
-          className="animate-fade-up mt-14 grid grid-cols-2 gap-8 border-t border-border pt-8 sm:grid-cols-3"
-          style={{ animationDelay: "320ms" }}
-        >
-          <StatBlock value="30+" label="Years Spinning" />
-          <StatBlock value="1000+" label="Events Played" />
-          <StatBlock
-            value="#1"
-            label="Most Requested DJ in Charlotte"
-            className="col-span-2 sm:col-span-1"
-          />
-        </dl>
-      </div>
     </section>
   );
 }

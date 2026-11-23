@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Clock, Facebook, Instagram, MapPin, Phone } from "lucide-react";
 
 import { NAV } from "./Header";
-import logoMark from "@/assets/sire-logo.png";
+import logoMark from "@/assets/logo-siresounds-footer.png";
 
 export function Footer() {
   return (
@@ -14,11 +14,8 @@ export function Footer() {
               <img
                 src={logoMark}
                 alt="SireSounds Mobile DJ"
-                className="h-10 w-10 object-contain"
+                className="h-20 w-auto max-w-full object-contain"
               />
-              <span className="font-display text-2xl font-semibold uppercase text-card-foreground">
-                SireSounds <span className="text-primary">Mobile DJ</span>
-              </span>
             </Link>
             <p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4 text-primary" /> Charlotte, North Carolina

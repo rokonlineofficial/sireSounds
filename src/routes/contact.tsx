@@ -7,6 +7,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { FinalCta } from "@/components/site/sections";
 import { SectionHeading } from "@/components/site/ui";
 import galleryCorporate from "@/assets/gallery-corporate.jpg";
+import footerLogo from "@/assets/logo-siresounds-footer.png";
 import { EVENT_TYPES, PHONE_DISPLAY, PHONE_HREF } from "@/data/site";
 
 const title = "Contact SireSounds Mobile DJ — Check Your Date | Charlotte NC";
@@ -136,6 +137,11 @@ function ContactPage() {
 
           <Reveal delay={120}>
             <div className="rounded-lg border border-border bg-surface p-8">
+              <img
+                src={footerLogo}
+                alt="SireSounds Mobile DJ"
+                className="mb-5 h-24 w-auto max-w-full object-contain"
+              />
               <h2 className="font-display text-3xl uppercase text-card-foreground">
                 Talk to <span className="text-primary">DJ Sire</span>
               </h2>
