@@ -4,9 +4,9 @@ import { PageHero } from "@/components/site/PageHero";
 import { FinalCta, RatesSection, WhySection } from "@/components/site/sections";
 import ctaBg from "@/assets/cta-bg.jpg";
 
-const title = "DJ Rates in Charlotte NC — Transparent Pricing | SireSounds";
+const title = "Audio Rental Rates in Charlotte, NC | SireSounds";
 const description =
-  "Wedding DJ from $600 per 4 hours, daytime event DJ from $400 per hour (3 hr minimum), and full equipment Rentals at $350 per day in Charlotte, NC.";
+  "Transparent rates for speakers, subwoofers, mixers and wireless microphones, with small and large event sound setups.";
 
 export const Route = createFileRoute("/rates")({
   head: () => ({
@@ -15,9 +15,11 @@ export const Route = createFileRoute("/rates")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/rates" },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/rates" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/rates" }],
+    links: [{ rel: "canonical", href: "https://www.siresoundsaudioequipmentrentals.com/rates" }],
   }),
   component: RatesPage,
 });

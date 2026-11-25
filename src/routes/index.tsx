@@ -13,9 +13,9 @@ import {
   WhySection,
 } from "@/components/site/sections";
 
-const title = "SireSounds Mobile DJ — Charlotte NC Wedding & Event DJ";
+const title = "SireSounds Audio Equipment Rentals | Speaker & PA Rentals in Charlotte, NC";
 const description =
-  "Charlotte's premium mobile DJ: 30+ years of weddings, corporate events and parties with pro sound, lighting, wireless mics and MC support. Call (704) 441-2561.";
+  "Rent speakers, subwoofers, mixers and wireless mics in Charlotte, Rock Hill, York & Clover. Small and large sound setups for weddings, parties, church and community events. Setup & breakdown available. Call (704) 441-2561.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,9 +24,16 @@ export const Route = createFileRoute("/")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/",
+      },
+    ],
   }),
   component: Index,
 });

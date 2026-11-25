@@ -9,9 +9,9 @@ import {
 } from "@/components/site/sections";
 import eventWedding from "@/assets/event-wedding.jpg";
 
-const title = "Events We DJ — Weddings, Corporate & Parties | SireSounds";
+const title = "Event Sound Equipment Rentals | SireSounds Charlotte";
 const description =
-  "Weddings, corporate nights, quinceañeras, Sweet 16s, family reunions, school events, HOA block parties and backyard BBQs across Charlotte, NC.";
+  "PA and speaker rentals for weddings, corporate events, parties and community gatherings in Charlotte and nearby towns.";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -20,9 +20,11 @@ export const Route = createFileRoute("/events")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/events" },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/events" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/events" }],
+    links: [{ rel: "canonical", href: "https://www.siresoundsaudioequipmentrentals.com/events" }],
   }),
   component: EventsPage,
 });

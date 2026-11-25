@@ -49,17 +49,30 @@ const FAQS = [
 export const Route = createFileRoute("/wedding-dj")({
   head: () => ({
     meta: [
-      { title: "Wedding DJ in Charlotte, NC | SireSounds Mobile DJ" },
+      { title: "Wedding Sound Rentals in Charlotte | SireSounds" },
       {
         name: "description",
         content:
-          "Charlotte wedding DJ and MC with 30+ years of experience. Ceremony sound, cocktail hour, grand entrances, reception dance party and uplighting.",
+          "Speaker, subwoofer and wireless microphone rentals for wedding ceremonies, cocktail hours and receptions in Charlotte, NC.",
       },
-      { property: "og:title", content: "Wedding DJ in Charlotte, NC | SireSounds Mobile DJ" },
+      { property: "og:title", content: "Wedding Sound Rentals in Charlotte | SireSounds" },
       {
         property: "og:description",
         content:
-          "Ceremony to last dance: music, MC and lighting for Charlotte weddings by SireSounds Mobile DJ.",
+          "Speaker, subwoofer and wireless microphone rentals for wedding ceremonies, cocktail hours and receptions in Charlotte, NC.",
+      },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/wedding-dj" },
+      { name: "twitter:title", content: "Wedding Sound Rentals in Charlotte | SireSounds" },
+      {
+        name: "twitter:description",
+        content:
+          "Speaker, subwoofer and wireless microphone rentals for wedding ceremonies, cocktail hours and receptions in Charlotte, NC.",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/wedding-dj",
       },
     ],
     scripts: [

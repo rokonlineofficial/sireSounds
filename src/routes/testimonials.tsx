@@ -7,11 +7,33 @@ import heroBg from "@/assets/dj-sire.jpg";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Client Reviews & Testimonials | SireSounds Mobile DJ Charlotte, NC" },
+      { title: "SireSounds Reviews | Charlotte Audio Rentals" },
       {
         name: "description",
         content:
-          "Real Google reviews from weddings, bridal showers, corporate events and private parties. See why Charlotte hosts trust SireSounds Mobile DJ.",
+          "Read customer reviews of SireSounds event audio and equipment services in Charlotte, NC.",
+      },
+      { property: "og:title", content: "SireSounds Reviews | Charlotte Audio Rentals" },
+      {
+        property: "og:description",
+        content:
+          "Read customer reviews of SireSounds event audio and equipment services in Charlotte, NC.",
+      },
+      {
+        property: "og:url",
+        content: "https://www.siresoundsaudioequipmentrentals.com/testimonials",
+      },
+      { name: "twitter:title", content: "SireSounds Reviews | Charlotte Audio Rentals" },
+      {
+        name: "twitter:description",
+        content:
+          "Read customer reviews of SireSounds event audio and equipment services in Charlotte, NC.",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/testimonials",
       },
     ],
   }),

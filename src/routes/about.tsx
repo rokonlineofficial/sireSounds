@@ -4,9 +4,9 @@ import { PageHero } from "@/components/site/PageHero";
 import { AboutSection, FinalCta, TestimonialsSection, WhySection } from "@/components/site/sections";
 import djSire from "@/assets/dj sire young.jpeg";
 
-const title = "About DJ Sire — 30+ Years Behind the Decks | SireSounds";
+const title = "About SireSounds Audio Rentals | Charlotte, NC";
 const description =
-  "Meet DJ Sire: three decades of mobile DJ experience in Charlotte, NC, mixing weddings, reunions, corporate nights and quinceañeras with clean sound and real crowd reading.";
+  "Meet SireSounds, a Charlotte-based audio equipment rental business serving events in North and South Carolina.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -15,9 +15,11 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/about" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://www.siresoundsaudioequipmentrentals.com/about" }],
   }),
   component: AboutPage,
 });

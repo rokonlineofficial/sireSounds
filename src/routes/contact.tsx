@@ -10,9 +10,9 @@ import galleryCorporate from "@/assets/gallery-corporate.jpg";
 import footerLogo from "@/assets/logo-siresounds-footer.png";
 import { EVENT_TYPES, PHONE_DISPLAY, PHONE_HREF } from "@/data/site";
 
-const title = "Contact SireSounds Mobile DJ — Check Your Date | Charlotte NC";
+const title = "Contact SireSounds | Audio Rentals in Charlotte";
 const description =
-  "Check your date with SireSounds Mobile DJ in Charlotte, NC. Call (704) 441-2561 or send event details for a fast quote.";
+  "Contact SireSounds to rent sound equipment in Charlotte, NC. Call (704) 441-2561 for availability, setup options and a quote.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -21,9 +21,11 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/contact" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://www.siresoundsaudioequipmentrentals.com/contact" }],
   }),
   component: ContactPage,
 });

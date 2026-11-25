@@ -49,17 +49,33 @@ const FAQS = [
 export const Route = createFileRoute("/corporate-events")({
   head: () => ({
     meta: [
-      { title: "Corporate Event DJ in Charlotte, NC | SireSounds Mobile DJ" },
+      { title: "Corporate Event Sound Rentals | SireSounds Charlotte" },
       {
         name: "description",
         content:
-          "Professional DJ, sound and MC services for Charlotte company parties, holiday events, galas, awards nights, conferences and team celebrations.",
+          "Rent PA speakers, subwoofers, mixers and wireless microphones for company events, presentations and celebrations in Charlotte, NC.",
       },
-      { property: "og:title", content: "Corporate Event DJ in Charlotte, NC | SireSounds Mobile DJ" },
+      { property: "og:title", content: "Corporate Event Sound Rentals | SireSounds Charlotte" },
       {
         property: "og:description",
         content:
-          "Clean music, clear microphones and an on-time program for Charlotte corporate events by SireSounds Mobile DJ.",
+          "Rent PA speakers, subwoofers, mixers and wireless microphones for company events, presentations and celebrations in Charlotte, NC.",
+      },
+      {
+        property: "og:url",
+        content: "https://www.siresoundsaudioequipmentrentals.com/corporate-events",
+      },
+      { name: "twitter:title", content: "Corporate Event Sound Rentals | SireSounds Charlotte" },
+      {
+        name: "twitter:description",
+        content:
+          "Rent PA speakers, subwoofers, mixers and wireless microphones for company events, presentations and celebrations in Charlotte, NC.",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/corporate-events",
       },
     ],
     scripts: [

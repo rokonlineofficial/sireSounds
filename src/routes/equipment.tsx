@@ -9,11 +9,30 @@ import paSystem from "@/assets/dj Set.jpeg";
 export const Route = createFileRoute("/equipment")({
   head: () => ({
     meta: [
-      { title: "Our DJ Equipment | SireSounds Mobile DJ Charlotte, NC" },
+      { title: "Audio Equipment Rentals | SireSounds Charlotte" },
       {
         name: "description",
         content:
-          "See the pro audio gear SireSounds Mobile DJ brings to Charlotte events: Yamaha MG10XU mixer, Electro-Voice ZLX loudspeakers and a complete PA speaker system.",
+          "Explore speaker, subwoofer, mixer and wireless microphone rentals for events in Charlotte and surrounding communities.",
+      },
+      { property: "og:title", content: "Audio Equipment Rentals | SireSounds Charlotte" },
+      {
+        property: "og:description",
+        content:
+          "Explore speaker, subwoofer, mixer and wireless microphone rentals for events in Charlotte and surrounding communities.",
+      },
+      { property: "og:url", content: "https://www.siresoundsaudioequipmentrentals.com/equipment" },
+      { name: "twitter:title", content: "Audio Equipment Rentals | SireSounds Charlotte" },
+      {
+        name: "twitter:description",
+        content:
+          "Explore speaker, subwoofer, mixer and wireless microphone rentals for events in Charlotte and surrounding communities.",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/equipment",
       },
     ],
   }),

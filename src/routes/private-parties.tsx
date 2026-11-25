@@ -54,17 +54,33 @@ const FAQS = [
 export const Route = createFileRoute("/private-parties")({
   head: () => ({
     meta: [
-      { title: "Private Party DJ in Charlotte, NC | Birthdays, Sweet 16s & More | SireSounds" },
+      { title: "Party Speaker Rentals in Charlotte | SireSounds" },
       {
         name: "description",
         content:
-          "Charlotte party DJ for birthdays, Sweet 16s, bridal showers, anniversaries, graduations, family reunions and backyard parties. Music for every age, guest requests welcome.",
+          "Rent speakers, subwoofers and wireless microphones for birthdays, reunions, backyard parties and celebrations in Charlotte, NC.",
       },
-      { property: "og:title", content: "Private Party DJ in Charlotte, NC | SireSounds Mobile DJ" },
+      { property: "og:title", content: "Party Speaker Rentals in Charlotte | SireSounds" },
       {
         property: "og:description",
         content:
-          "Birthdays, Sweet 16s, reunions and backyard parties. Music, lights and a packed dance floor by SireSounds Mobile DJ.",
+          "Rent speakers, subwoofers and wireless microphones for birthdays, reunions, backyard parties and celebrations in Charlotte, NC.",
+      },
+      {
+        property: "og:url",
+        content: "https://www.siresoundsaudioequipmentrentals.com/private-parties",
+      },
+      { name: "twitter:title", content: "Party Speaker Rentals in Charlotte | SireSounds" },
+      {
+        name: "twitter:description",
+        content:
+          "Rent speakers, subwoofers and wireless microphones for birthdays, reunions, backyard parties and celebrations in Charlotte, NC.",
+      },
+    ],
+    links: [
+      {
+        rel: "canonical",
+        href: "https://www.siresoundsaudioequipmentrentals.com/private-parties",
       },
     ],
     scripts: [
